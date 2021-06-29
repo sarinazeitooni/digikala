@@ -5,7 +5,7 @@ import NavigationBar from "../navigation/NavigationBar";
 const Main = (()=>{
     return(
         <React.Fragment>
-            <TopHeader icon={}/>
+            <TopHeader/>
             <Navigation/>
             <NavigationBar/>
         </React.Fragment>
