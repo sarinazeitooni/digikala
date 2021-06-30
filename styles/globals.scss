@@ -1,0 +1,32 @@
+@import './variables';
+@font-face {
+  font-family: "digikala";
+  src: url("../fonts/iranyekan/eot/iranyekanwebregularfanum.eot") format("eot"),
+  url("../fonts/iranyekan/woff/iranyekanwebregularfanum.woff") format("woff"),
+  url("../fonts/iranyekan/ttf/iranyekanwebregularfanum.ttf") format("truetype");
+}
+@supports (-webkit-touch-callout: none) {
+  letter-spacing: -1px !important;
+}
+
+html,
+body {
+  background: $body-back;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button{
+  background: transparent;
+  border: none;
+  outline: none;
+}
+* {
+  box-sizing: border-box;
+}

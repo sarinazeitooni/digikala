@@ -1,0 +1,72 @@
+@import './styles/variables';
+.card-container{
+  .prices-container {
+    margin-top: 15px;
+    direction: ltr;
+    font-family: digikala;
+    .discount {
+      background-color: $discount-btn;
+      font-weight: 700;
+      width: fit-content;
+      color: $white;
+      border-radius: 20px;
+      padding: 4px 7px 1px;
+      letter-spacing: 0;
+      margin-bottom: 3px;
+    }
+    .old-price {
+      color: $old-price;
+      position: absolute;
+      top: 74%;
+      left: 29%;
+      &:before {
+        width: 100%;
+        height: 10px;
+        position: absolute;
+        content: " ";
+        border-bottom: 1px solid $old-price;
+      }
+    }
+    .new-price {
+      font-weight: 700;
+      .currency-price{
+        font-size: 13px;
+        font-weight: normal;
+      }
+    }
+  }
+  .progress-bar-container {
+    direction: ltr;
+    margin: 15px 0 0 0;
+    background-color: $progress-bar-back;
+    .progress-bar {
+      border-radius: 20px;
+    }
+  }
+  .class {
+    font-size: 12px;
+    margin: 10px 0;
+    color: $old-price;
+    font-family: digikala;
+  }
+  .progress-text {
+    float: right;
+    @extend .class;
+    span {
+      color: $discount-btn;
+      margin-left: 2px;
+    }
+  }
+  .limited-time {
+    padding-left: 15px;
+    float: left;
+    position: relative;
+    @extend .class;
+    svg {
+      font-size: 19px;
+      position: absolute;
+      top: -3px;
+      left: -5px;
+    }
+  }
+}

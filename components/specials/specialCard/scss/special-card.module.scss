@@ -1,0 +1,40 @@
+@import './styles/variables';
+@import 'components/specials/specialCard/scss/special-card-details';
+.card-container {
+  background-color: $white;
+  height: 440px;
+  border-radius: 8px;
+  padding: 5px 15px 16px;
+  margin: 10px;
+  direction: rtl;
+  width: 259px;
+  .card-img {
+    width: 180px;
+    height: 180px;
+    background-size: cover !important;
+    margin: 30px auto;
+  }
+  .card-title {
+    color: $card-title;
+    font-family: digikala;
+    font-size: .75rem;
+    line-height: 25px;
+    margin: 5px 15px;
+  }
+  .card-digi-plus {
+    font-family: digikala;
+    color: $card-digi-plus;
+    font-size: .75rem;
+    line-height: 1.833;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-right: 5px;
+    position: relative;
+    content: "";
+    .digi-plus-icon {
+      right: 0;
+      position: absolute;
+      top: 2px;
+    }
+  }
+}

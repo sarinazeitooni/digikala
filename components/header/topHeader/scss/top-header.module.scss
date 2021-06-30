@@ -1,0 +1,67 @@
+@import "./styles/variables";.top-header-container{
+  background: $white;
+  font-family: digikala;
+  padding: 7px 130px 7px 0;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  .account-manager-container{
+    display: flex;
+    flex-direction: row-reverse;
+    svg{
+      margin: 7px;
+      color: $sign-in-color;
+    }
+    .sign-in-btn{
+      font-family: digikala;
+      font-size: .75rem;
+      line-height: 1.833;
+      padding: 10px 12px;
+      border-radius: 8px;
+      border: 1px solid $btn-border;
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      cursor: pointer;
+      color: $sign-in-color;
+      svg{
+        margin: 0 0 0 5px;
+      }
+    }
+    .vertical-line{
+      margin: 10px 13px;
+      height: 24px;
+      background: $btn-border;
+      width: 1px;
+    }
+  }
+  .input-logo-container{
+    display: flex;
+    direction: rtl;
+    flex-direction: row;
+    .logo-image{
+      width: 110px;
+      margin: 0 23px;
+    }
+    .search-input-container{
+      position: relative;
+      svg{
+        color: $icon-gray;
+        top: 11px;
+        right: 8px;
+        position: absolute;
+      }
+      .search-input{
+        font-family: digikala;
+        width: 406%;
+        border-radius: 8px;
+        background-color: $input-back;
+        color: $input-color;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 1.833;
+        padding: 12px 45px 12px 10px;
+        border:none;
+      }
+    }
+  }
+}

@@ -6,17 +6,48 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "@types/enzyme": "^3.10.8",
+    "@types/jest": "^26.0.23",
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
+    "@typescript-eslint/parser": "^4.28.1",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.2",
+    "@zeit/next-sass": "^1.0.1",
+    "@zeit/next-typescript": "^1.1.1",
+    "enzyme": "^3.11.0",
+    "enzyme-to-json": "^3.6.2",
+    "eslint-plugin-react": "^7.24.0",
+    "jest": "^27.0.6",
     "next": "11.0.1",
+    "node-sass": "^4.14.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-device-detect": "^1.17.0",
+    "react-dom": "17.0.2",
+    "react-number-format": "^4.6.3",
+    "react-progressbar": "^15.4.1",
+    "swiper": "^6.7.1",
+    "ts-jest": "^27.0.3"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "testEnvironment": "jsdom",
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js",
+      "\\.(css|less)$": "<rootDir>/assetsTransformer.js"
+    },
+    "setupTestFrameworkScriptFile": "<rootDir>/setupEnzyme.ts"
   },
   "devDependencies": {
     "@types/node": "^15.12.5",
     "@types/react": "^17.0.11",
-    "eslint": "7.29.0",
+    "eslint": "^7.29.0",
     "eslint-config-next": "11.0.1",
     "typescript": "^4.3.4"
   }
