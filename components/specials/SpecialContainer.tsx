@@ -5,12 +5,13 @@ import ArrowBackIosOutlinedIcon from '@material-ui/icons/ArrowBackIosOutlined';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SpecialCard from "./specialCard/SpecialCard";
 interface props{
-    backImg : string
+    backImg : string,
+    color: string
 }
-const SpecialContainer = ({backImg} : props)=>{
+const SpecialContainer = ({color, backImg} : props)=>{
     const [Data,setData] = useState(data.cards);
     return(
-        <div className={style['special-container']}>
+        <div style={{backgroundColor : color}} className={style['special-container']}>
             <div style={{background: `url("${backImg}")`}} className={style['special-img']}/>
             <button className={style['specials-btn']}>{data.getAll} <ArrowBackIosOutlinedIcon/></button>
             <div className={style['special-swiper-container']}>
