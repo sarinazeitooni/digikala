@@ -1,0 +1,26 @@
+@import './styles/variables';
+.categories-container{
+  display: grid;
+  font-family: digikala;
+  direction: rtl;
+  grid-template-rows: 50% 50% 1%;
+  width: 133px;
+  text-align: center;
+  .categories-icon{
+    svg{
+      font-size: 40px;
+      color: $categories-items;
+    }
+  }
+  .categories-title{
+    white-space: nowrap;
+    color: $categories-item-title;
+    margin-top: 8px;
+    text-align: center;
+    font-size: 12px;
+  }
+  .categories-product{
+    font-size: 11px;
+    color: $categories-items;
+  }
+}

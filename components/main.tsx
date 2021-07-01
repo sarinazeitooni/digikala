@@ -4,6 +4,8 @@ import Ads from "./ads/Ads";
 import SpecialContainer from "./specials/SpecialContainer";
 import SponseredAds from "./sponseredAds/SponseredAds";
 import Category from "./category/Category";
+import Categories from "./categories/Categories";
+import Data from "./categories/data/Data";
 const Main = ()=>{
     return(
         <>
@@ -13,7 +15,9 @@ const Main = ()=>{
             <SponseredAds/>
             <SpecialContainer color="#6bb927" backImg="https://www.digikala.com/static/files/63494995.png"/>
             <Category/>
+            <Categories items={Data}/>
+            <Category/>
         </>
     )
-};
+}
 export default Main;

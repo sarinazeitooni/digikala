@@ -30,3 +30,7 @@ button{
 * {
   box-sizing: border-box;
 }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #474747;
+  opacity: 1; /* Firefox */
+}
