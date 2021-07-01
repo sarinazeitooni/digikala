@@ -1,14 +1,40 @@
 @import './styles/variables';
+.card-container {
+  background-color: $white;
+  height: 320px;
+  display: grid;
+  grid-template-rows: 50% 25% 0;
+  border-radius: 8px;
+  padding: 5px 15px 16px;
+  margin: 10px;
+  direction: rtl;
+  width: fit-content;
+  .card-img {
+    width: 136px;
+    height: 136px;
+    background-size: cover !important;
+  }
+  .card-title {
+    color: $category-title;
+    font-family: digikala;
+    font-size: .75rem;
+    line-height: 25px;
+    text-align: right;
+    margin-top: 14px;
+  }
+}
 .card-container{
   .prices-container {
     margin-top: 15px;
     direction: ltr;
+    position: relative;
     font-family: digikala;
     .discount {
       background-color: $discount-btn;
       font-weight: 700;
       width: fit-content;
       color: $white;
+      font-size: 11px;
       border-radius: 20px;
       padding: 4px 7px 1px;
       letter-spacing: 0;
@@ -17,37 +43,26 @@
     .old-price {
       color: $old-price;
       position: absolute;
-      top: 74%;
-      left: 29%;
+      top: 2px;
+      font-size: 14px;
+      left: 40px;
+      left: 40px;
       &:before {
         width: 100%;
-        height: 10px;
+        height: 9px;
         position: absolute;
         content: " ";
         border-bottom: 1px solid $old-price;
       }
     }
     .new-price {
+      font-weight: 700;
       direction: rtl;
       text-align: left;
-      font-weight: 700;
-      font-size: 20px;
       .currency-price{
-        padding: 0px 5px;
-        margin-top: 10px;
-        font-size: 14px;
+        font-size: 13px;
         font-weight: normal;
       }
-    }
-  }
-  .progress-bar-container {
-    direction: ltr;
-    margin: 15px 0 0 0;
-    .bar-container{
-      background-color: $progress-bar-back;
-    }
-    .progress-bar {
-      border-radius: 20px;
     }
   }
   .class {
@@ -55,26 +70,5 @@
     margin: 10px 0;
     color: $old-price;
     font-family: digikala;
-  }
-  .progress-text {
-    float: right;
-    direction: rtl;
-    @extend .class;
-    span {
-      color: $discount-btn;
-      margin-left: 2px;
-    }
-  }
-  .limited-time {
-    padding-left: 15px;
-    float: left;
-    position: relative;
-    @extend .class;
-    svg {
-      font-size: 19px;
-      position: absolute;
-      top: -3px;
-      left: -5px;
-    }
   }
 }

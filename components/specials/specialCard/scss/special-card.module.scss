@@ -4,6 +4,8 @@
   background-color: $white;
   height: 440px;
   border-radius: 8px;
+  display: grid;
+  grid-template-rows: 50% 10% 13% 17%;
   padding: 5px 15px 16px;
   margin: 10px;
   direction: rtl;
