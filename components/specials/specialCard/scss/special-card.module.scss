@@ -1,6 +1,7 @@
 @import './styles/variables';
 @import 'components/specials/specialCard/scss/special-card-details';
 .card-container {
+  cursor: pointer;
   background-color: $white;
   height: 440px;
   border-radius: 8px;

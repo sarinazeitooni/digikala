@@ -1,3 +1,23 @@
 .partners-container{
-
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  background-color: #f2f2f2;
+  margin-top: 20px;
+  .partner{
+    color: #4a5f73;
+    border-right: 1px solid #e0e0e2;
+    height: 104px;
+    width: 124px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:nth-child(1){
+      border-right: none;
+    }
+    img{
+      height: 15px;
+    }
+  }
 }

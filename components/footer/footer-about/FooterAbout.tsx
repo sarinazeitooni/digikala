@@ -1,7 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import style from './style/footer-about.module.scss';
 import messages from "./messages/messages";
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 const FooterAbout =()=>{
+    const [btnValue , setBtnValue] = useState(true);
+    function changeBtnValue(){
+        setBtnValue(!btnValue);
+    }
     return(
         <div className={style['about-container']}>
             <div className={style['trust-container']}>
@@ -13,8 +18,8 @@ const FooterAbout =()=>{
             </div>
             <div className={style['about-text']}>
                 <div className={style['about-title']}>{messages.title}</div>
-                <p className={style['about-paragraph']}>{messages.paragraph}</p>
-                <button className={style['more-toggle']}></button>
+                <p className={ btnValue ?`${style["more"]} ${style["about-paragraph"]}`: `${style["less"]} ${style["about-paragraph"]}`}>{messages.paragraph}</p>
+                <button onClick={changeBtnValue} className={style['more-toggle']}>{btnValue ? messages.more : messages.less} <span><ChevronLeftIcon/></span></button>
             </div>
         </div>
     )

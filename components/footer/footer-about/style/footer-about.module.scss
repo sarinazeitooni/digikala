@@ -30,9 +30,28 @@
       line-height: 26px;
       color: $input-email-color;
       direction: rtl;
+      overflow: hidden;
+      margin: 0;
     }
     .more-toggle{
+      font-family: digikala;
+      cursor: pointer;
+      padding: 0 0 10px 0;
+      font-size: 12px;
+      line-height: 217%;
+      font-weight: 700;
+      color: #a1a3a8;
+      span{
+        position: absolute;
+      }
+    }
+    .less{
+      margin-bottom: 15px;
+      height: 85px;
+    }
+    .more{
 
+      height: fit-content;
     }
   }
 }

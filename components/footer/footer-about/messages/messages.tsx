@@ -5,6 +5,8 @@ const messages = {
         'https://www.digikala.com/static/files/6e2d6b38.png',
         'https://www.digikala.com/static/files/236e437c.png',
         'https://www.digikala.com/static/files/3a24ea39.png'
-    ]
+    ],
+    less: 'بستن',
+    more: 'مشاهده بیشتر'
 };
 export default messages;

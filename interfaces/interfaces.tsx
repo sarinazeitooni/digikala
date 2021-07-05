@@ -1,3 +1,0 @@
-interface props {
-    image : string
-}

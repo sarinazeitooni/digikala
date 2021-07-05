@@ -10,6 +10,7 @@
   .column{
     font-family: digikala;
     .column-title{
+      cursor: pointer;
       font-size: 16px;
       line-height: 34.4px;
       color: $footer-support;
@@ -17,6 +18,7 @@
     }
     .column-item-container{
       .column-item{
+        cursor: pointer;
         font-size: 14px;
         margin: 17px 0;
         color: #81858b;

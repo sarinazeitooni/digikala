@@ -1,9 +1,12 @@
 @import "./styles/variables";.top-header-container{
   background: $white;
   font-family: digikala;
-  padding: 7px 130px 7px 0;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  padding: 10px 130px 7px 0;
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 20% 81%;
   .account-manager-container{
     display: flex;
     flex-direction: row-reverse;
@@ -61,6 +64,9 @@
         line-height: 1.833;
         padding: 12px 45px 12px 10px;
         border:none;
+        &::placeholder{
+          color: $icon-gray;
+        }
       }
     }
   }

@@ -4,11 +4,14 @@ import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import messages from './messages/messages'
 const FooterSupport = ()=>{
     const [features , SetFeatures] = useState(messages.features);
+    const scrollTop = () =>{
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    };
     return(
         <div className={style['footer-support-container']}>
             <div className={style['back-to-top-container']}>
                 <img src='https://www.digikala.com/static/files/2a4774d7.svg'/>
-                <button className={style['back-to-top']}>{messages.backToTop} <span><ExpandLessIcon/></span></button>
+                <button onClick={scrollTop} className={style['back-to-top']}>{messages.backToTop} <span><ExpandLessIcon/></span></button>
             </div>
             <div className={style['support-text']}>{messages.support}</div>
             <div className={style['footer-features-container']}>
