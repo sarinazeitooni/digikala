@@ -1,0 +1,82 @@
+@import 'styles/variables';
+.footer-columns-container{
+  width: 70%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  text-align: right;
+  margin: 20px auto;
+  padding-top: 5px;
+  .column{
+    font-family: digikala;
+    .column-title{
+      font-size: 16px;
+      line-height: 34.4px;
+      color: $footer-support;
+      font-weight: bold;
+    }
+    .column-item-container{
+      .column-item{
+        font-size: 14px;
+        margin: 17px 0;
+        color: #81858b;
+      }
+    }
+    .links-container{
+      margin-top: 10px;
+      direction: rtl;
+      .links{
+        display: flex;
+        width: 60%;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        margin-bottom: 35px;
+        span{
+          cursor: pointer;
+          svg{
+            &:hover{
+              color: $categories-item-title;
+              transition: .2s;
+            }
+            width: 27px;
+            height: 27px;
+            color: $icon-gray;
+          }
+        }
+      }
+    }
+    .news-container-title{
+      color: $footer-support;
+    }
+    .input-email-container{
+      display: flex;
+      margin-top: 10px;
+      flex-direction: row-reverse;
+      letter-spacing: -.8px;
+      .submit-button{
+        font-family: digikala;
+        background: $btn-border;
+        width: 57px;
+        height: 48px;
+        border: none;
+        color: $white;
+        margin-right: 8px;
+        border-radius: 8px;
+        text-align: center;
+      }
+      .email-input{
+        width: 340px;
+        background: $input-back;
+        padding: 8px 12px 13px 12px;
+        border-radius: 8px;
+        color: $input-email-color;
+        font-size: 15px;
+        &::placeholder{
+          font-family: digikala;
+          font-size: 14px;
+          color: $icon-gray;
+        }
+      }
+    }
+  }
+}

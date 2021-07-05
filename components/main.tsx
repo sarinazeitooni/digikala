@@ -6,6 +6,7 @@ import SponseredAds from "./sponseredAds/SponseredAds";
 import Category from "./category/Category";
 import Categories from "./categories/Categories";
 import Data from "./categories/data/Data";
+import Footer from "./footer/Footer";
 const Main = ()=>{
     return(
         <>
@@ -17,6 +18,7 @@ const Main = ()=>{
             <Category/>
             <Categories items={Data}/>
             <Category/>
+            <Footer/>
         </>
     )
 }

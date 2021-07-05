@@ -6,7 +6,6 @@ interface props{
 }
 const Categories = ({items} : props)=>{
     const [data, setData] = useState(items.data);
-    console.log(data);
     return(
         <div className={style['categories-container']}>
             <h3>{items.categoriesTitle}</h3>

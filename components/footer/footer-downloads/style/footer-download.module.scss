@@ -1,0 +1,44 @@
+@import 'styles/variables';
+.footer-download-container{
+  .footer-download{
+    background-color: $footer-download-back;
+    padding: 16px 20px;
+    height: 76px;
+    font-family: digikala;
+    margin: 0 auto;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 70%;
+    .downloads{
+      display: flex;
+      .download-item{
+        width: 150px;
+      }
+      .download-item , .download-more{
+        height: 44px;
+        margin: 5px;
+      }
+      .download-more{
+        width: 44px;
+        display: flex;
+        border-radius: 4px;
+        align-items: center;
+        font-weight: bolder;
+        justify-content: center;
+        background-color: $white;
+      }
+    }
+    .download-title-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .label{
+        font-size: 18px;
+        margin: 0 15px;
+        color: $white;
+      }
+    }
+  }
+}

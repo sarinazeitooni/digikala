@@ -1,5 +1,8 @@
 import React from 'react';
-const Navigation = ()=>{
+interface props{
+    data : Array
+}
+const Navigation = ({data} : props)=>{
     return(
         <>
 

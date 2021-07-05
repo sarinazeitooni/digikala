@@ -27,6 +27,11 @@ button{
   border: none;
   outline: none;
 }
+input{
+  outline: none;
+  direction: rtl;
+  border: none;
+}
 * {
   box-sizing: border-box;
 }

@@ -1,0 +1,14 @@
+@import './styles/variables';
+.footer-container{
+  width: 100%;
+  margin-top: 28px;
+  border-top: 1px solid $btn-border;
+  background-color: $white;
+  .copy-right{
+    font-family: digikala;
+    font-size: 14px;
+    margin: -10px 0 10px 0;
+    color: $input-email-color;
+    text-align: center;
+  }
+}
