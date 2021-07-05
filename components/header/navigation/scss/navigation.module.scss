@@ -29,12 +29,34 @@
     width: 75%;
     display: flex;
     flex-direction: row;
-    align-items: center;
     .navbar-item{
-      padding: 7px 12px 8px;
+      cursor: pointer;
+      padding: 16px 12px 11px;
       font-size: 12px;
       color: $sign-in-color;
       display: inline-block;
+      position: relative;
+      &:hover{
+        &:before , &:after{
+          width: 50%;
+        }
+      }
+      &:before , &:after{
+        transition: width .4s ;
+        bottom: 0;
+        position: absolute;
+        content: '';
+        width: 0;
+        border-bottom: 2px solid $special-back;
+      }
+      &:after{
+        direction: ltr;
+        right: 0;
+      }
+      &:before{
+        direction: rtl;
+        left: 0;
+      }
     }
   }
 }
