@@ -18,7 +18,7 @@
       font-family: digikala;
       font-size: .75rem;
       line-height: 1.833;
-      padding: 10px 12px;
+      padding: 8px 10px;
       border-radius: 8px;
       border: 1px solid $btn-border;
       display: flex;
@@ -27,6 +27,7 @@
       cursor: pointer;
       color: $sign-in-color;
       svg{
+        font-size: 1.8rem;
         margin: 0 0 0 5px;
       }
     }
