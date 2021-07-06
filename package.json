@@ -21,10 +21,8 @@
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.2",
     "@zeit/next-sass": "^1.0.1",
     "@zeit/next-typescript": "^1.1.1",
-    "enzyme": "^3.11.0",
     "enzyme-to-json": "^3.6.2",
     "eslint-plugin-react": "^7.24.0",
-    "jest": "^27.0.6",
     "next": "11.0.1",
     "node-sass": "^4.14.1",
     "react": "17.0.2",
@@ -32,6 +30,10 @@
     "react-dom": "17.0.2",
     "react-number-format": "^4.6.3",
     "react-progressbar": "^15.4.1",
+    "react-redux": "^7.2.4",
+    "redux": "^4.1.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.3.0",
     "swiper": "^6.7.1",
     "ts-jest": "^27.0.3"
   },
@@ -45,10 +47,16 @@
     "setupTestFrameworkScriptFile": "<rootDir>/setupEnzyme.ts"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
     "@types/node": "^15.12.5",
     "@types/react": "^17.0.11",
+    "babel-jest": "^27.0.6",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
     "eslint": "^7.29.0",
     "eslint-config-next": "11.0.1",
+    "jest": "^27.0.6",
     "typescript": "^4.3.4"
   }
 }

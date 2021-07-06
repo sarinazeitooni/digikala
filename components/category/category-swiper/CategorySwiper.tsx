@@ -2,10 +2,11 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import data from "../../specials/texts/data";
 import CategoryCard from "../category-card/Category-card";
+
 const CategorySwiper = ()=>{
     return(
         <>
-            <Swiper slidesPerView={6} pagination={{ clickable: true }}>
+            <Swiper style={{'--swiper-navigation-color': 'black' , '--swiper-navigation-size' : '26px'}} slidesPerView={6} navigation>
                 {data.cards.map((item)=>{
                     return(
                         <SwiperSlide>

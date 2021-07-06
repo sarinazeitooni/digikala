@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import style from './scss/categories.module.scss';
 import CategoriesCard from "./categories-card/CategoriesCard";
 interface props{
-    items : Array
+    items : []
 }
 const Categories = ({items} : props)=>{
     const [data, setData] = useState(items.data);

@@ -1,7 +1,6 @@
 import React from 'react';
 import FooterSupport from "./footer-support/FooterSupport";
 import style from './styles/footer.module.scss';
-import messages from "./footer-support/messages/messages";
 import FooterColumns from "./footer-columns/FooterColumns";
 import FooterDownloads from "./footer-downloads/FooterDownloads";
 import FooterPartners from "./footer-partners/FooterPartners";
@@ -13,7 +12,6 @@ const Footer = ()=>{
             <FooterColumns/>
             <FooterDownloads/>
             <FooterAbout/>
-            <div className={style['copy-right']}>{messages.copyRight}</div>
             <FooterPartners/>
         </div>
     )

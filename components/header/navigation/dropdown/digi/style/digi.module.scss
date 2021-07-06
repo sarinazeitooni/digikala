@@ -1,0 +1,37 @@
+@import './styles/variables';
+.Digi-container{
+  display: flex;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: $body-back;
+  flex-direction: row-reverse;
+  .image-container{
+    img{
+      width: 324px;
+      height: 162px;
+      border-radius: 8px;
+    }
+    direction: ltr;
+    width: 55%;
+  }
+  .info-container{
+    width: 45%;
+    direction: rtl;
+    padding-left: 50px;
+    .title-image{
+      height: 28px;
+    }
+    .menu-item{
+      color: $footer-support;
+      font-size: 12px;
+      line-height: 26px;
+      padding-right: 4px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 7px;
+      svg{
+        font-size: 10px;
+      }
+    }
+  }
+}

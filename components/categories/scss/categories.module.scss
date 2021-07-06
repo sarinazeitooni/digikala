@@ -1,5 +1,8 @@
 @import './styles/variables';
 .categories-container{
+  @media screen and (max-width: 600px){
+    width: 90%;
+  }
   width: 70%;
   margin: 0 auto;
   border-radius: 8px;

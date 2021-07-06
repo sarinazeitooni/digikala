@@ -29,6 +29,7 @@
     width: 75%;
     display: flex;
     flex-direction: row;
+    position: relative;
     .navbar-item{
       cursor: pointer;
       padding: 16px 12px 11px;
@@ -39,6 +40,9 @@
       &:hover{
         &:before , &:after{
           width: 50%;
+        }
+        .drop-down{
+          display: block;
         }
       }
       &:before , &:after{
@@ -56,6 +60,14 @@
       &:before{
         direction: rtl;
         left: 0;
+      }
+      .drop-down{
+        z-index: 10;
+        position: absolute;
+        top: 48px;
+        right: -200%;
+        display: none;
+        height: 50px;
       }
     }
   }
