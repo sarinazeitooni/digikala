@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{Fragment} from 'react';
 import Header from "./header/Header";
 import Ads from "./ads/Ads";
 import SpecialContainer from "./specials/SpecialContainer";
@@ -9,7 +9,7 @@ import Data from "./categories/data/Data";
 import Footer from "./footer/Footer";
 const Main = ()=>{
     return(
-        <>
+        <Fragment>
             <Header/>
             <Ads/>
             <SpecialContainer color="#ef394e" backImg="https://www.digikala.com/static/files/63494995.png"/>
@@ -19,7 +19,7 @@ const Main = ()=>{
             <Categories items={Data}/>
             <Category/>
             <Footer/>
-        </>
+        </Fragment>
     )
 }
 export default Main;

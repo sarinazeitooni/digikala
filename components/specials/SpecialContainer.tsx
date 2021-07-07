@@ -4,23 +4,17 @@ import data from "./texts/data";
 import ArrowBackIosOutlinedIcon from '@material-ui/icons/ArrowBackIosOutlined';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import SwiperCore, {Navigation, Lazy} from 'swiper';
-
-SwiperCore.use([Navigation, Lazy]);
 import SpecialCard from "./specialCard/SpecialCard";
 
-interface props {
-    backImg: string,
-    color: string
-}
-
-const SpecialContainer = ({color, backImg}: props) => {
+const SpecialContainer = ({color, backImg}) => {
+    SwiperCore.use([Navigation, Lazy]);
     const [Data, setData] = useState(data.cards);
     return (
         <div style={{backgroundColor: color}} className={style['special-container']}>
             <div style={{background: `url("${backImg}")`}} className={style['special-img']}/>
             <button className={style['specials-btn']}>{data.getAll} <ArrowBackIosOutlinedIcon/></button>
             <div className={style['special-swiper-container']}>
-                <Swiper style={{'--swiper-navigation-size': '26px', '--swiper-navigation-color': 'black'}}
+                <Swiper style={{'--swiper-navigation-size': '26px' , '--swiper-navigation-color': 'black'}}
                         slidesPerView={4} navigation
                         // navigation={{
                         //     nextEl: '.swiper-button-next',

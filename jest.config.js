@@ -1,10 +1,35 @@
 module.exports = {
-    roots: ["<rootDir>/src"],
+    moduleFileExtensions: [
+        "ts",
+        "tsx",
+        "js",
+        "jsx"
+    ],
     transform: {
-        "^.+\\.tsx?$": "ts-jest"
+        '^.+\\.jsx?$': 'babel-jest',
     },
-    testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
-    moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
-    snapshotSerializers: ["enzyme-to-json/serializer"],
-    setupFilesAfterEnv: ["<rootDir>/setupEnzyme.ts"]
-}
+    testMatch: [
+        "**/*.(test|spec).(js|jsx)"
+    ],
+    globals: {
+        "ts-jest": {
+            useBabelrc: true,
+            tsConfigFile: "jest.tsconfig.json"
+        }
+    },
+    coveragePathIgnorePatterns: [
+        "/node_modules/",
+        "enzyme.js"
+    ],
+    setupTestFrameworkScriptFile: "<rootDir>/enzyme.js",
+    coverageReporters: [
+        "json",
+        "lcov",
+        "text",
+        "text-summary"
+    ],
+    moduleNameMapper: {
+        '^.+\\.module\\.(css|sass|scss)$': 'identity-obj-proxy',
+        '(webp|jpeg)$': 'identity-obj-proxy',
+    },
+};

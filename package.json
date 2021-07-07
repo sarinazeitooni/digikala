@@ -14,11 +14,8 @@
   "dependencies": {
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
-    "@types/enzyme": "^3.10.8",
-    "@types/jest": "^26.0.23",
     "@typescript-eslint/eslint-plugin": "^4.28.1",
     "@typescript-eslint/parser": "^4.28.1",
-    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.2",
     "@zeit/next-sass": "^1.0.1",
     "@zeit/next-typescript": "^1.1.1",
     "enzyme-to-json": "^3.6.2",
@@ -34,29 +31,26 @@
     "redux": "^4.1.0",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.3.0",
-    "swiper": "^6.7.1",
-    "ts-jest": "^27.0.3"
-  },
-  "jest": {
-    "collectCoverage": true,
-    "testEnvironment": "jsdom",
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js",
-      "\\.(css|less)$": "<rootDir>/assetsTransformer.js"
-    },
-    "setupTestFrameworkScriptFile": "<rootDir>/setupEnzyme.ts"
+    "swiper": "^6.7.1"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.14.7",
     "@babel/preset-react": "^7.14.5",
+    "@types/enzyme": "^3.10.9",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/jest": "^26.0.24",
     "@types/node": "^15.12.5",
     "@types/react": "^17.0.11",
+    "babel-core": "^6.26.3",
     "babel-jest": "^27.0.6",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
     "eslint": "^7.29.0",
     "eslint-config-next": "11.0.1",
     "jest": "^27.0.6",
-    "typescript": "^4.3.4"
+    "ts-jest": "^27.0.3",
+    "typescript": "^4.3.5"
   }
 }

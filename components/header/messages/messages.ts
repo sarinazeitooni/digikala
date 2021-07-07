@@ -5,8 +5,9 @@ import CheckCircleOutlineIcon from '@material-ui/icons/CheckCircleOutline';
 import CategoryIcon from '@material-ui/icons/Category';
 import PaymentIcon from '@material-ui/icons/Payment';
 const messages = {
-    inputPlaceHolder : "جستجو در دیجی‌کالا …",
+    inputPlaceHolder : "     جستجو در دیجی‌کالا …",
     signIn : "ورود به حساب کاربری",
+    logIn : 'ورود',
     location : 'لطفا شهر و استان خود را انتخاب کنید',
     navigation : [
         {
