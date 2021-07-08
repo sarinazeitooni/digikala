@@ -13,20 +13,33 @@
     border-top: 1px solid $divider-color;
   }
   .location-row{
+    padding: 9px 0;
+    font-family: digikala;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     border-top: 1px solid $divider-color;
     border-bottom: 1px solid $divider-color;
+    .arrow-icon{
+      svg{
+        padding: 2px;
+        color: $icon-gray;
+        margin-left: 10px;
+      }
+    }
     .location-text{
+      margin-right: 13px;
       flex-direction: row-reverse;
       display: flex;
       direction: rtl;
-      svg{
-
-      }
       span{
-
+        font-size: 14px;
+        line-height: 28px;
       }
     }
     svg{
+      margin-left: 10px;
+      color: $responsive-svg-color;
       direction: ltr;
     }
   }

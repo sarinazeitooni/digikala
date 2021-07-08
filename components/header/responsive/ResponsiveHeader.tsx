@@ -38,10 +38,10 @@ const ResponsiveHeader = () => {
             </div>
             <div className={style['mobile-header-row '] + " " + style['location-row']}>
                 <span className={style['location-text']}>
-                    <RoomOutlinedIcon/>
                     <span>{messages.location}</span>
+                    <RoomOutlinedIcon/>
                 </span>
-                <ArrowBackIosOutlinedIcon/>
+                <span className={style['arrow-icon']}><ArrowBackIosOutlinedIcon/></span>
             </div>
         </div>
     )
