@@ -1,8 +1,15 @@
 .ad-image-container-center{
+  @media screen and (max-width:600px){
+    width: 95%;
+    img{
+      height: 53px !important;
+      border-radius: 16px;
+    }
+  }
   width: 70%;
   cursor: pointer;
   img{
-    height: 85px !important;
+    height: 85px ;
     border-radius: 16px;
   }
   margin: 10px auto 0 auto;
