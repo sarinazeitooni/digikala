@@ -8,8 +8,14 @@ module.exports = {
     transform: {
         '^.+\\.jsx?$': 'babel-jest',
     },
+    transform: {
+        '^.+\\.tsx?$': 'babel-jest',
+    },
     testMatch: [
         "**/*.(test|spec).(js|jsx)"
+    ],
+    testMatch: [
+        "**/*.(test|spec).(ts|tsx)"
     ],
     globals: {
         "ts-jest": {

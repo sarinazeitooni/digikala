@@ -3,7 +3,7 @@ import {shallow} from "enzyme";
 import AdImage from "../AdImage";
 describe("ad image component",()=>{
     it("should match snap shot" , ()=>{
-        const wrapper = shallow(<AdImage/);
+        const wrapper = shallow(<AdImage/>);
         expect(wrapper).toMatchSnapshot();
     });
     it("should render image correctly" , ()=>{
