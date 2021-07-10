@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import style from './style/footer-about.module.scss';
 import messages from "./messages/messages";
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import { v4 as uuidv4 } from 'uuid';
 const FooterAbout =()=>{
     const [btnValue , setBtnValue] = useState(true);
     function changeBtnValue(){
@@ -13,7 +14,7 @@ const FooterAbout =()=>{
                 <div className={style['trust-container']}>
                     {messages.urls.map((item)=>{
                         return(
-                            <img className={style['trust-items']} src={item}/>
+                            <img key={uuidv4()} className={style['trust-items']} src={item}/>
                         )
                     })}
                 </div>

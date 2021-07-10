@@ -5,6 +5,7 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GroupWorkIcon from '@material-ui/icons/GroupWork';
+import { v4 as uuidv4 } from 'uuid';
 
 const links = [
     <InstagramIcon/>,
@@ -18,7 +19,7 @@ const FooterColumns = () => {
             {
                 messages.columns.map((item) => {
                     return (
-                        <div className={style['column']}>
+                        <div className={style['column']} key={uuidv4()}>
                             <div className={style['column-title']}>{item.title}</div>
                             <div className={style['column-item-container']}>
                                 {item.items && item.items.map((text) => {
@@ -32,7 +33,7 @@ const FooterColumns = () => {
                                     <div className={style['links']}>
                                         {links.map((linkItem)=>{
                                             return(
-                                                <span>
+                                                <span key={uuidv4()}>
                                                     {linkItem}
                                                 </span>
                                             )

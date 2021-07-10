@@ -1,10 +1,9 @@
 /* eslint-disable */
-import React from 'react';
+import React,{Fragment} from 'react';
 import style from './scss/navigation.module.scss';
 import EditLocationOutlinedIcon from '@material-ui/icons/EditLocationOutlined';
 import Digi from "./dropdown/digi/Digi";
-import DropDownDiscount from "./dropdown/discount/DropDownDiscount";
-import DropDownCategories from "./dropdown/categories/DropDownCategories";
+
 
 interface IProps {
     data: { location: string, navigation: { title: string, digi: boolean, icon : any , digiComponent: { url: string } }[] }
@@ -19,14 +18,15 @@ const Navigation: React.FC<IProps> = ({data}) => {
             <div className={style['navbar-container']}>
                 {data.navigation.map((item) => {
                     return (
-                        <>
+                        <Fragment key={item.title}>
                             <div className={style['navbar-item']}>{item.title}
+                                {/*<span className={style['navbar-icon']}>{item.icon}</span>*/}
                                 <div className={style['drop-down']}>
                                     {item.digi && <Digi data={item.digiComponent}/>}
                                     {/*{item.icon && }*/}
                                 </div>
                             </div>
-                        </>
+                        </Fragment>
                     )
                 })}
             </div>

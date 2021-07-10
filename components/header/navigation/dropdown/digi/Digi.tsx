@@ -14,7 +14,7 @@ const Digi :React.FC<IProps> = ({data})=>{
                 {data.titleImage && <img className={style['title-image']} src={data.titleImage}/>}
                 {data.menu && data.menuItem.map((item)=>{
                     return(
-                        <div className={style['menu-item']}>{item}<ArrowBackIosIcon/></div>
+                        <div key={item} className={style['menu-item']}>{item}<ArrowBackIosIcon/></div>
                     )
                 })}
             </div>

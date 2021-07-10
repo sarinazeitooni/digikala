@@ -11,32 +11,32 @@ const messages = {
     location : 'لطفا شهر و استان خود را انتخاب کنید',
     navigation : [
         {
-            icon : MenuIcon,
+            icon : <MenuIcon/>,
             title : 'دسته بندی کالاها',
             categories : true ,
             discount : false ,
             digi : false
 
         },
-        {   icon : StorefrontIcon,
+        {   icon : <StorefrontIcon/>,
             title : 'سوپرمارکت',
             categories : false ,
             discount : false ,
             digi : false
         },
-        {   icon : MoneyOffIcon,
+        {   icon : <MoneyOffIcon/>,
             title : 'تخفیف ها و پیشنهادها',
             categories : false ,
             discount : true ,
             digi : false
         },
-        {   icon : CheckCircleOutlineIcon,
+        {   icon : <CheckCircleOutlineIcon/>,
             title : 'دیجی کالای من',
             categories : false ,
             discount : true ,
             digi : false
         },
-        {   icon : CategoryIcon,
+        {   icon : <CategoryIcon/>,
             title : 'دیجی پلاس',
             categories : false ,
             discount : false ,

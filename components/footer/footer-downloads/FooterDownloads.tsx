@@ -1,4 +1,5 @@
 import style from './style/footer-download.module.scss';
+import { v4 as uuidv4 } from 'uuid';
 import messages from "./messages/messages";
 
 const FooterDownloads = () => {
@@ -13,7 +14,7 @@ const FooterDownloads = () => {
                     <div className={style['download-more']}> ... </div>
                     {messages.urls.map((url)=>{
                         return(
-                            <img src={url} className={style['download-item']}/>
+                            <img key={uuidv4()} src={url} className={style['download-item']}/>
                         )
                     })}
                 </div>

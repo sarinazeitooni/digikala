@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import style from './styles/footer-support.module.scss';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
+import { v4 as uuidv4 } from 'uuid';
 import messages from './messages/messages'
 const FooterSupport = ()=>{
     const [features , SetFeatures] = useState(messages.features);
@@ -17,7 +18,7 @@ const FooterSupport = ()=>{
             <div className={style['footer-features-container']}>
                 {features.map((item)=>{
                     return(
-                        <div className={style['feature-item-container']}>
+                        <div className={style['feature-item-container']} key={uuidv4()}>
                             <img src={item.icon}/>
                             <div>{item.text}</div>
                         </div>

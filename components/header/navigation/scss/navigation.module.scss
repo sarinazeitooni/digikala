@@ -37,6 +37,9 @@
       color: $sign-in-color;
       display: inline-block;
       position: relative;
+      .navbar-icon{
+
+      }
       &:hover{
         &:before , &:after{
           width: 50%;

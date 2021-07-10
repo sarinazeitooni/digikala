@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import style from './scss/categories.module.scss';
 import CategoriesCard from "./categories-card/CategoriesCard";
+import { v4 as uuidv4 } from 'uuid';
 interface props{
     items : []
 }
@@ -13,7 +14,7 @@ const Categories = ({items} : props)=>{
                 {
                     data.map((item)=>{
                         return(
-                            <CategoriesCard icon={item.icon} title={item.title} product={item.product}/>
+                            <CategoriesCard key={uuidv4()} icon={item.icon} title={item.title} product={item.product}/>
                         )
                     })
                 }
