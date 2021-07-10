@@ -2,6 +2,9 @@
 .card-container{
   .prices-container {
     margin-top: 15px;
+    @media screen and (max-width: 600px){
+      margin-top: -2px;
+    }
     direction: ltr;
     font-family: digikala;
     .discount {
@@ -13,12 +16,20 @@
       padding: 4px 7px 1px;
       letter-spacing: 0;
       margin-bottom: 3px;
+      @media screen and (max-width: 600px){
+        font-size: 12px;
+        font-weight: 300;
+      }
     }
     .old-price {
       color: $old-price;
       position: absolute;
       top: 74%;
       left: 29%;
+      @media screen and (max-width: 600px){
+        top: 70%;
+        left: 32%;
+      }
       &:before {
         width: 100%;
         height: 10px;
@@ -32,6 +43,10 @@
       text-align: left;
       font-weight: 700;
       font-size: 20px;
+      @media screen and (max-width:600px){
+        font-size: 16px;
+        margin-top: 5px;
+      }
       .currency-price{
         padding: 0px 5px;
         margin-top: 10px;
@@ -43,6 +58,9 @@
   .progress-bar-container {
     direction: ltr;
     margin: 15px 0 0 0;
+    @media screen and (max-width: 600px){
+      margin: 6px 0 0 0 ;
+    }
     .bar-container{
       background-color: $progress-bar-back;
     }

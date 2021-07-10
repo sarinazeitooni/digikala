@@ -1,5 +1,8 @@
 @import "styles/variables";
 .footer-support-container{
+  @media screen and (max-width:600px){
+    width: 90% !important;
+  }
   .back-to-top-container{
     flex-direction: row-reverse;
     display: flex;

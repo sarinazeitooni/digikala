@@ -13,7 +13,7 @@
     border-top: 1px solid $divider-color;
   }
   .location-row{
-    padding: 9px 0;
+    padding: 6px 0;
     font-family: digikala;
     display: flex;
     flex-direction: row-reverse;
@@ -33,7 +33,7 @@
       display: flex;
       direction: rtl;
       span{
-        font-size: 14px;
+        font-size: 12px;
         line-height: 28px;
       }
     }
@@ -47,18 +47,17 @@
     display: flex;
     padding: 10px 0;
     flex-direction: row-reverse;
-    justify-content: space-around;
-    .menu-icon{
-      direction: rtl;
-    }
+    justify-content: space-between;
+
     .digikala-icon{
       img{
         width: 93px!important;
         height: 25px!important;
       }
     }
-    .chat-box-icon{
-      direction: ltr;
+    .chat-box-icon,.menu-icon{
+      text-align: center;
+      width: 60px;
     }
     .input-container{
       position: relative;
@@ -86,7 +85,9 @@
         border-left: 1px solid $divider-color;
         padding-left: 10px;
         font-size: 14px;
-        padding-top: 5px;
+        margin-top: 5px;
+        padding-right: 5px;
+        height: 20px;
       }
         svg{
 

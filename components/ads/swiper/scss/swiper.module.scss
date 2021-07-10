@@ -1,4 +1,7 @@
 .swiper-img {
+  @media screen and (max-width: 600px){
+    height: 180px;
+  }
   width: 100%;
   height: 452px;
   background-size: cover !important;

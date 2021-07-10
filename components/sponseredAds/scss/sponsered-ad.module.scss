@@ -1,13 +1,24 @@
 .sponsered-ad-container{
   @media screen and (min-width:600px){
     width: 71.4%;
+    img{
+      width: 319px;
+      height: 240px;
+    }
+  }
+  @media screen and (max-width:600px){
+    display: grid;
+    margin: 5px auto;
+    grid-template-columns: 50% 50%;
+    img{
+      margin: 0 !important;
+      padding: 5px;
+    }
   }
   margin: 28px auto 5px auto;
   img{
     background-size: cover !important;
     background-position: center!important;
-    width: 319px;
-    height: 240px;
     display: inline-block;
     margin: 10px;
   }

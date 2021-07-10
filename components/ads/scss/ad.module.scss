@@ -15,6 +15,16 @@
   margin: 10px auto 0 auto;
 }
 .swiper-and-card-container{
+  @media screen and (max-width:600px){
+    display: block;
+    width: 100%;
+    .card-container{
+      display: none;
+    }
+    .swiper-container{
+      margin: 10px!important;
+    }
+  }
   width: 70%;
   display: grid;
   grid-template-columns: 33% 68%;

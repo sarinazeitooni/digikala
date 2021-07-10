@@ -17,12 +17,24 @@
     background-size: cover !important;
     margin: 30px auto;
   }
+  @media screen and (max-width: 600px){
+    height: 330px;
+    width: 200px;
+    .card-img {
+      width: 120px;
+      height: 120px;
+      margin: 15px auto;
+    }
+  }
   .card-title {
     color: $card-title;
     font-family: digikala;
     font-size: .75rem;
     line-height: 25px;
     margin: 5px 15px;
+    @media screen and (max-width: 600px){
+      margin: -10px 15px;
+    }
   }
   .card-digi-plus {
     font-family: digikala;
