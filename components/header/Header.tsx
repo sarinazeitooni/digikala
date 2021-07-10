@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Navigation from "./navigation/Navigation";
 import AdImage from "./Ad/AdImage";
-import TopHeader from "./topHeader/topHeader";
+import TopHeader from "./topHeader/TopHeader";
 import ResponsiveHeader from "./responsive/ResponsiveHeader";
 import style from './style/header.module.scss';
 import messages from "./messages/messages";

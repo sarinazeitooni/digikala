@@ -1,7 +1,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import data from "../../specials/texts/data";
-import CategoryCard from "../category-card/Category-card";
+import CategoryCard from "../category-card/CategoryCard";
 
 const CategorySwiper = ()=>{
     return(

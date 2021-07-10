@@ -2,7 +2,7 @@ import React from 'react';
 import SwiperCore, {Autoplay} from 'swiper/core';
 import { Swiper, SwiperSlide } from "swiper/react";
 import data from "../../specials/texts/data";
-import CategoryCard from "../category-card/Category-card";
+import CategoryCard from "../category-card/CategoryCard";
 const SingleItem = () => {
     SwiperCore.use([Autoplay]);
     return (
