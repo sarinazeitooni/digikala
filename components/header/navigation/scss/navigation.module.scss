@@ -32,13 +32,24 @@
     position: relative;
     .navbar-item{
       cursor: pointer;
-      padding: 16px 12px 11px;
+      padding: 16px 25px 16px 15px;
       font-size: 12px;
       color: $sign-in-color;
       display: inline-block;
       position: relative;
+      direction: ltr;
+      &:nth-child(6){
+        .navbar-icon{
+          svg{
+            color: rgb(166, 52, 137);
+          }
+        }
+      }
       .navbar-icon{
-
+        top: 11px;
+        right: 0px;
+        color: $icon-gray;
+        position: absolute;
       }
       &:hover{
         &:before , &:after{
