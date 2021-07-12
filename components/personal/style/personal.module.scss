@@ -1,0 +1,51 @@
+@import './styles/variables';
+.personal-container{
+  background-color: $white;
+  width: 409px;
+  height: 289px;
+  margin: 10px auto;
+  direction: rtl;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 1px 4px 0 #00000026, 0 1px 1px 0 #00000005;
+  font-family: digikala;
+  .head-icon{
+    padding: 15px 0 0 0;
+    color: $personal-icon-color;
+    svg{
+      font-size: 35px;
+    }
+  }
+  .personal-title{
+    font-weight: normal;
+    font-size: 14px;
+    color: $personal-title-color;
+  }
+  .personal-sub{
+    width: 92%;
+    line-height: 25px;
+    margin: 20px auto;
+    font-size: 12px;
+    color: $card-digi-plus;
+  }
+  .personal-login-btn{
+    margin-bottom: 12px;
+    border-radius: 8px;
+    padding: 15px 45px 15px 19px;
+    font-family: digikala;
+    color: $white;
+    position: relative;
+    font-size: 12px;
+    background-color: $special-back;
+    svg{
+      right: 10px;
+      top: 11px;
+      position: absolute;
+    }
+  }
+  .personal-sign-up{
+    font-size: 10px;
+    display: block;
+    color: $input-email-color;
+  }
+}
