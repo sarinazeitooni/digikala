@@ -4,6 +4,7 @@ import style from './scss/navigation.module.scss';
 import EditLocationOutlinedIcon from '@material-ui/icons/EditLocationOutlined';
 import Digi from "./dropdown/digi/Digi";
 
+// https://www.pluralsight.com/guides/how-to-show-and-hide-reactjs-components
 
 interface IProps {
     data: { location: string, navigation: { title: string, digi: boolean, icon : any , digiComponent: { url: string } }[] }

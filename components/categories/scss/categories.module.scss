@@ -2,6 +2,14 @@
 .categories-container{
   @media screen and (max-width: 600px){
     width: 90%;
+    background-color: transparent;
+    box-shadow: none;
+    margin-bottom: -10px;
+    h3{
+      font-size: 14px !important;
+      text-align: right !important;
+      padding-top: 0 !important;
+    }
   }
   width: 70%;
   margin: 0 auto;
@@ -18,6 +26,11 @@
     text-align: center;
   }
   .items-container{
+    @media screen and (max-width: 600px){
+      width: 100%;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
     display: flex;
     flex-direction: row-reverse;
   }

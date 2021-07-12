@@ -7,6 +7,9 @@
   width: 133px;
   cursor: pointer;
   text-align: center;
+  @media screen and (max-width: 600px){
+    width: 95px;
+  }
   .categories-icon{
     svg{
       font-size: 40px;
@@ -14,6 +17,9 @@
     }
   }
   .categories-title{
+    @media screen and (max-width: 600px){
+      display: none;
+    }
     white-space: nowrap;
     color: $categories-item-title;
     margin-top: 8px;
@@ -21,6 +27,9 @@
     font-size: 12px;
   }
   .categories-product{
+    @media screen and (max-width: 600px){
+      display: none;
+    }
     font-size: 11px;
     color: $categories-items;
   }

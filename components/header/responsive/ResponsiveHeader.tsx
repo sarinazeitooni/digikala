@@ -25,7 +25,6 @@ const ResponsiveHeader = () => {
             <div className={style['mobile-header-row'] + " " + style['input-row']}>
                 <div className={style['input-container']}>
                     <SearchOutlinedIcon/>
-
                     <input placeholder={messages.inputPlaceHolder} type='text'/>
                 </div>
                 <div className={style['login-container']}>

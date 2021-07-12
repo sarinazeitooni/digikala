@@ -1,6 +1,7 @@
 const messages = {
     backToTop: 'بازگشت به بالا',
-    support: 'تلفن پشتیبانی: ۶۱۹۳۰۰۰۰ - ۰۲۱ | هفت روز هفته، ۲۴ ساعت شبانه‌روز پاسخگوی شما هستیم.',
+    supportFirst: 'تلفن پشتیبانی: ۶۱۹۳۰۰۰۰ - ۰۲۱',
+    supportSecond : 'هفت روز هفته، ۲۴ ساعت شبانه‌روز پاسخگوی شما هستیم.',
     features: [
         {
             icon: 'https://www.digikala.com/static/files/8f570b58.svg',

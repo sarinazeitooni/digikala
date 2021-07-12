@@ -10,6 +10,10 @@
   margin: 10px;
   direction: rtl;
   width: fit-content;
+  @media screen and (max-width: 600px){
+    width: 90%;
+    height: 253px;
+  }
   .card-img {
     width: 136px;
     height: 136px;

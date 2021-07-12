@@ -7,6 +7,19 @@
   text-align: right;
   margin: 20px auto;
   padding-top: 5px;
+  flex-wrap: wrap;
+  @media screen and (max-width: 600px){
+    width: 90%;
+    .column{
+      &:nth-child(3){
+        display: none;
+      }
+    }
+    .column{
+      &:nth-child(4){
+      }
+    }
+  }
   .column{
     font-family: digikala;
     .column-title{
@@ -27,12 +40,19 @@
     .links-container{
       margin-top: 10px;
       direction: rtl;
+      @media screen and (max-width: 600px){
+        margin-right: 40%;
+        margin-top: -8.5%;
+      }
       .links{
         display: flex;
         width: 60%;
         justify-content: space-around;
         flex-direction: row-reverse;
         margin-bottom: 35px;
+        @media screen and (max-width: 600px){
+          width: 50%;
+        }
         span{
           cursor: pointer;
           svg{
