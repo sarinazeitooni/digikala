@@ -9,7 +9,8 @@
   padding-top: 5px;
   flex-wrap: wrap;
   @media screen and (max-width: 600px){
-    width: 90%;
+    width: 100%;
+    justify-content: space-around;
     .column{
       &:nth-child(3){
         display: none;
@@ -28,6 +29,9 @@
       line-height: 34.4px;
       color: $footer-support;
       font-weight: bold;
+      @media screen and (max-width:600px){
+        font-size: 14px;
+      }
     }
     .column-item-container{
       .column-item{
@@ -35,6 +39,9 @@
         font-size: 14px;
         margin: 17px 0;
         color: #81858b;
+        @media screen and (max-width:600px){
+          font-size: 12px;
+        }
       }
     }
     .links-container{
