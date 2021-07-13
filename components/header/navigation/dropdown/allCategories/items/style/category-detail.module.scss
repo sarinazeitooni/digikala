@@ -1,4 +1,10 @@
 @import './styles/variables';
+.hover-items{
+  &:hover{
+    color: $special-back;
+  }
+  cursor: pointer;
+}
 .category-detail-container{
   svg{
     font-size: 12px;
@@ -21,7 +27,14 @@
     .group-detail-item {
       width: 150%;
       height: fit-content;
+      img{
+        position: absolute;
+        left: -420%;
+        border-radius: 16px;
+        width: 283px;
+      }
       .detail-title {
+        @extend .hover-items;
         font-size: 14px;
         color: $footer-support;
         margin: 2px 0;
@@ -33,6 +46,7 @@
       }
       .detail-items {
         .detail-item{
+          @extend .hover-items;
           padding: 6px 0;
         }
         font-size: 12px;

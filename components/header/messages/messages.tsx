@@ -132,86 +132,30 @@ const messages = {
                     ]
                 }, {
                     img: 'https://dkstatics-public.digikala.com/digikala-adservice-banners/88a1496b90a07d6343ad10d3db5c4cb5582c0b88_1619245126.jpg?x-oss-process=image/quality,q_80',
-                    categoryTitle: 'خودرو، ابزار و تجهیزات صنعتی',
-                    items: [
-                        {
-                            itemTitle: '',
-                            itemOption: []
-                        }
-                    ]
+                    categoryTitle: 'خودرو، ابزار و تجهیزات صنعتی'
                 }, {
-                    img: 'https://www.digikala.com/static/files/5851ec93.svg',
-                    categoryTitle: 'مد و پوشاک',
-                    items: [
-                        {
-                            itemTitle: '',
-                            itemOption: []
-                        }
-                    ]
+
+                    categoryTitle: 'مد و پوشاک'
                 }, {
-                    img: 'https://dkstatics-public.digikala.com/digikala-adservice-banners/fee0c9f47b9a9a038175db3d65ff460aa0ba7a3d_1619244589.jpg?x-oss-process=image/quality,q_80',
-                    categoryTitle: 'اسباب بازی، کودک و نوزاد',
-                    items: [
-                        {
-                            itemTitle: '',
-                            itemOption: []
-                        }
-                    ]
+
+                    categoryTitle: 'اسباب بازی، کودک و نوزاد'
                 }, {
-                    img: 'https://dkstatics-public.digikala.com/digikala-adservice-banners/a5ccd3e0877e197a4ae942edd6584de7f7d9b902_1619244433.jpg?x-oss-process=image/quality,q_80',
-                    categoryTitle: 'کالاهای سوپرمارکتی',
-                    items: [
-                        {
-                            itemTitle: '',
-                            itemOption: []
-                        }
-                    ]
+
+                    categoryTitle: 'کالاهای سوپرمارکتی'
                 }, {
-                    img: 'https://dkstatics-public.digikala.com/digikala-adservice-banners/5bc1169a02c04b48f0e26d8c67437e0512e9492f_1619244833.jpg?x-oss-process=image/quality,q_80',
-                    categoryTitle: 'زیبایی و سلامت',
-                    items: [
-                        {
-                            itemTitle: '',
-                            itemOption: []
-                        }
-                    ]
+
+                    categoryTitle: 'زیبایی و سلامت'
                 }, {
-                    img: 'https://dkstatics-public.digikala.com/digikala-adservice-banners/f9fc20a869004d62522647b7643fc2d74472fd1b_1619244761.jpg?x-oss-process=image/quality,q_80',
-                    categoryTitle: 'خانه و آشپزخانه',
-                    items: [
-                        {
-                            itemTitle: '',
-                            itemOption: []
-                        }
-                    ]
+
+                    categoryTitle: 'خانه و آشپزخانه'
                 }, {
-                    img: 'https://dkstatics-public.digikala.com/digikala-adservice-banners/5cbd4bf62d163f2599425ab18e6a33413961a764_1619244687.jpg?x-oss-process=image/quality,q_80',
-                    categoryTitle: 'کتاب، لوازم تحریر و هنر',
-                    items: [
-                        {
-                            itemTitle: '',
-                            itemOption: []
-                        }
-                    ]
+
+                    categoryTitle: 'کتاب، لوازم تحریر و هنر'
                 }, {
-                    img: 'https://dkstatics-public.digikala.com/digikala-adservice-banners/a90f05f722e325707f7ac4e70b8e672ac6a5bbb6_1619244954.jpg?x-oss-process=image/quality,q_80',
-                    categoryTitle: 'ورزش و سفر',
-                    items: [
-                        {
-                            itemTitle: '',
-                            itemOption: []
-                        }
-                    ]
+
+                    categoryTitle: 'ورزش و سفر'
                 }, {
-                    categoryTitle: 'محصولات بومی و محلی',
-                    items: [
-                        {
-                            itemTitle: '',
-                            itemOption: [
-                                'ghhhh'
-                            ]
-                        }
-                    ]
+                    categoryTitle: 'محصولات بومی و محلی'
                 },
             ]
         },

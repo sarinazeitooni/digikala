@@ -24,7 +24,7 @@ const FooterColumns = () => {
                             <div className={style['column-item-container']}>
                                 {item.items && item.items.map((text) => {
                                     return (
-                                        <div className={style['column-item']}>{text}</div>
+                                        <div key={text} className={style['column-item']}>{text}</div>
                                     )
                                 })}
                             </div>

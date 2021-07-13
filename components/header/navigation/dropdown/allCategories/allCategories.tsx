@@ -16,7 +16,7 @@ const AllCategories: React.FC<IProps> = ({data}) => {
                         <React.Fragment key={index.categoryTitle}>
                             <div className={style['category-item']}>{index.categoryTitle}</div>
                             <div className={style['category-detail-container']}>
-                                <CategoryDetail title={index.categoryTitle} data={index.items}/>
+                                <CategoryDetail img={index.img ? index.img : ''} title={index.categoryTitle} data={index.items}/>
                             </div>
                         </React.Fragment>
 
