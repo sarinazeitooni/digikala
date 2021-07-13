@@ -1,0 +1,27 @@
+@import './styles/variables';
+.category-detail-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .category-title {
+    width: 100%;
+    padding-top: 4px;
+    color: $footer-support;
+    font-size: 12px;
+  }
+    svg{
+      font-size: 12px;
+      margin-bottom: -2px;
+      margin-right: -5px;
+    }
+  .group-detail-item {
+    height: fit-content;
+    .detail-title {
+      margin: 0;
+    }
+
+    .detail-items {
+
+    }
+  }
+}
