@@ -1,7 +1,7 @@
 @import './styles/variables';
 .Digi-container{
   display: flex;
-  border-radius: 8px;
+  border-radius: 0 0 8px 8px;
   padding: 10px;
   background-color: $body-back;
   .image-container{
