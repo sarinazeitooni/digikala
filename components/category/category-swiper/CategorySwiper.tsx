@@ -6,8 +6,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 const CategorySwiper = ()=>{
     return(
-        <>
-            <Swiper style={{'--swiper-navigation-color': 'black' , '--swiper-navigation-size' : '26px'}} slidesPerView={6} navigation>
+        <Swiper style={{'--swiper-navigation-color': 'black' , '--swiper-navigation-size' : '26px'}} slidesPerView={6} navigation>
                 {data.cards.map((item)=>{
                     return(
                         <SwiperSlide key={uuidv4()}>
@@ -16,7 +15,6 @@ const CategorySwiper = ()=>{
                     )
                 })}
             </Swiper>
-        </>
     )
 }
 export default CategorySwiper;

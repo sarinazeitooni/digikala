@@ -1,0 +1,29 @@
+@import '../../../styles/variables';
+.single-item-advice{
+  @media screen and (max-width: 600px){
+    display: none;
+  }
+  background-color: $white;
+  border-radius: 8px;
+  direction: ltr;
+  border: 1px solid $single-pic-container-border;
+  box-shadow: 0 2px 4px 0 #0000001a;
+  .single-item-title{
+    color: $single-item-title;
+    height: 57px;
+    line-height: 56px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0 13px;
+  }
+  .progress{
+    animation: progress 4s infinite;
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 1px;
+    background: linear-gradient(90deg,#ffd3db,#fb3449);
+    width: 90%;
+  }
+}

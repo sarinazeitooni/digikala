@@ -4,7 +4,6 @@ import Progress from 'react-progressbar';
 import NumberFormat from 'react-number-format';
 import data from "../texts/data";
 import AccessTimeOutlinedIcon from '@material-ui/icons/AccessTimeOutlined';
-
 interface props {
     title: string,
     img: string,
@@ -13,7 +12,6 @@ interface props {
     digiPlus: string,
     sold: number
 }
-
 const SpecialCard = ({sold, title, img, price, discount, digiPlus}: props) => {
     const [oldPrice, setOldPrice] = useState(price);
     const [Discount, setDiscount] = useState(100 - discount);
@@ -41,7 +39,6 @@ const SpecialCard = ({sold, title, img, price, discount, digiPlus}: props) => {
                 <div className={style['progress-text']}> <span>{sold}%</span> {data.sold}</div>
                 <div className={style['limited-time']}><span> 22:21:00</span><AccessTimeOutlinedIcon/></div>
             </div>
-
         </div>
     )
 }

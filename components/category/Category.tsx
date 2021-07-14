@@ -19,7 +19,7 @@ const Category = () => {
             </div>
             <div className={style['single-item-advice']}>
                 <h3 className={style['single-item-title']}>{texts.singlePicTitle}</h3>
-                <span className={style['progress']}></span>
+                <span className={style['progress']}/>
                 <SingleItem/>
             </div>
         </div>

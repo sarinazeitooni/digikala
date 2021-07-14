@@ -1,4 +1,16 @@
+import InstagramIcon from "@material-ui/icons/Instagram";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import GroupWorkIcon from "@material-ui/icons/GroupWork";
+import React from "react";
+
 const messages = {
+    links:[
+        <InstagramIcon/>,
+        <TwitterIcon/>,
+        <LinkedInIcon/>,
+        <GroupWorkIcon/>
+    ],
     columns : [
         {
             social: false,

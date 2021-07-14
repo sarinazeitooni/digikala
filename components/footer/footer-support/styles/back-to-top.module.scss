@@ -1,0 +1,40 @@
+.back-to-top-container{
+  flex-direction: row-reverse;
+  display: flex;
+  justify-content: space-between;
+  img{
+    width: 113.33px;
+    height: 30px;
+    @media screen and (max-width:600px){
+      width: 91px;
+      height: 24px;
+      margin-top: 10px;
+    }
+  }
+  span{
+    bottom: 1.5px;
+    left: 8px;
+    position: absolute;
+  }
+  .back-to-top {
+    position: relative;
+    direction: rtl;
+    cursor: pointer;
+    white-space: nowrap;
+    border: 1px solid $icon-gray;
+    border-radius: 8px;
+    height: 40px;
+    color: $icon-gray;
+    padding: 5px 16px 5px 40px;
+    font-family: digikala;
+    @media screen and (max-width:600px){
+      font-size: 12px;
+      border: 1px solid $btn-border;
+    }
+    span{
+      svg{
+        padding: 5px;
+      }
+    }
+  }
+}

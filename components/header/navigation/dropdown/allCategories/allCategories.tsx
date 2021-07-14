@@ -3,14 +3,11 @@ import style from './style/all-categories.module.scss'
 import CategoryDetail from "./items/categoryDetail";
 
 interface IProps {
-    data: []
+    data: {categoryTitle : string , img : string , }[]
 }
-
 const AllCategories: React.FC<IProps> = ({data}) => {
     return (
-        <>
-
-            <div className={style['all-categories']}>
+         <div className={style['all-categories']}>
                 {data.map((index) => {
                     return (
                         <React.Fragment key={index.categoryTitle}>
@@ -19,11 +16,9 @@ const AllCategories: React.FC<IProps> = ({data}) => {
                                 <CategoryDetail img={index.img ? index.img : ''} title={index.categoryTitle} data={index.items}/>
                             </div>
                         </React.Fragment>
-
                     )
                 })}
             </div>
-        </>
     )
 }
 export default AllCategories;

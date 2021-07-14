@@ -3,7 +3,7 @@ import style from './scss/categories.module.scss';
 import CategoriesCard from "./categories-card/CategoriesCard";
 import { v4 as uuidv4 } from 'uuid';
 interface props{
-    items : []
+    items : {categoriesTitle : string , data: {icon: any , title : string , product : string}[]}
 }
 const Categories = ({items} : props)=>{
     const [data, setData] = useState(items.data);

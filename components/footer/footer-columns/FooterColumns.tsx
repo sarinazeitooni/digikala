@@ -1,18 +1,7 @@
 import React from 'react';
 import style from './style/footer-columns.module.scss';
 import messages from "./messages/messages";
-import TwitterIcon from '@material-ui/icons/Twitter';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import GroupWorkIcon from '@material-ui/icons/GroupWork';
 import { v4 as uuidv4 } from 'uuid';
-
-const links = [
-    <InstagramIcon/>,
-    <TwitterIcon/>,
-    <LinkedInIcon/>,
-    <GroupWorkIcon/>
-]
 const FooterColumns = () => {
     return (
         <div className={style['footer-columns-container']}>
@@ -31,7 +20,7 @@ const FooterColumns = () => {
                             {item.social && <>
                                 <div className={style['links-container']}>
                                     <div className={style['links']}>
-                                        {links.map((linkItem)=>{
+                                        {messages.links.map((linkItem)=>{
                                             return(
                                                 <span key={uuidv4()}>
                                                     {linkItem}

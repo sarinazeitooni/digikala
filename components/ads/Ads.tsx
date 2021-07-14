@@ -5,7 +5,7 @@ import Card from "./card/Card";
 import SwiperAd from "./swiper/swiper";
 const Ads = () => {
     return (
-        <>
+        <React.Fragment>
             <div className={style['ad-image-container-center']}>
                 <AdImage
                     image="https://dkstatics-public.digikala.com/digikala-adservice-banners/775c8826bf7ee83df851eae649789af09b732967_1624731045.jpg?x-oss-process=image/quality,q_80"/>
@@ -19,7 +19,7 @@ const Ads = () => {
                     <SwiperAd/>
                 </div>
             </div>
-        </>
+        </React.Fragment>
     )
 };
 export default Ads;

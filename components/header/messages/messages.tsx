@@ -19,7 +19,7 @@ const messages = {
             categories: true,
             discount: false,
             digi: false,
-            categories: [
+            categoriesList: [
                 {
                     categoryTitle: 'کالای دیجیتال',
                     items: [

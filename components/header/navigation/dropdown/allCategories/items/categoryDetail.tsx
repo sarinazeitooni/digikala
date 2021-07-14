@@ -3,7 +3,7 @@ import style from './style/category-detail.module.scss';
 import messages from "../../../../messages/messages";
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 interface IProps {
-    data: [],
+    data: {itemTitle : string , itemOption : [] }[],
     title : string,
     img: string
 }

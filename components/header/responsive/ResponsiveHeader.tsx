@@ -8,6 +8,7 @@ import SearchOutlinedIcon from '@material-ui/icons/SearchOutlined';
 import ArrowBackIosOutlinedIcon from '@material-ui/icons/ArrowBackIosOutlined';
 import RoomOutlinedIcon from '@material-ui/icons/RoomOutlined';
 import messages from "../messages/messages";
+
 const ResponsiveHeader = () => {
     return (
         <div className={style['mobile-header']}>
