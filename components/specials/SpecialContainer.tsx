@@ -6,16 +6,18 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import SwiperCore, {Navigation, Lazy} from 'swiper';
 import SpecialCard from "./specialCard/SpecialCard";
 import { v4 as uuidv4 } from 'uuid';
+import useViewPort from '../../customIsMobileHook/useViewPort';
 const SpecialContainer = ({color, backImg}) => {
     SwiperCore.use([Navigation, Lazy]);
     const [Data, setData] = useState(data.cards);
+    const isMobile = useViewPort();
     return (
         <div style={{backgroundColor: color}} className={style['special-container']}>
             <div style={{background: `url("${backImg}")`}} className={style['special-img']}/>
             <button className={style['specials-btn']}>{data.getAll} <ArrowBackIosOutlinedIcon/></button>
             <div className={style['special-swiper-container']}>
                 <Swiper style={{'--swiper-navigation-size': '26px' , '--swiper-navigation-color': 'black'}}
-                        slidesPerView={4} navigation
+                        slidesPerView={ isMobile ? 1.15 :4} navigation
                 >
                     {Data.map((item) => {
                         return (
