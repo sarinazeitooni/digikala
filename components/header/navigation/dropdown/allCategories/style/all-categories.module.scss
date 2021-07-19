@@ -1,11 +1,12 @@
 @import './styles/variables';
 .all-categories {
+  direction: rtl;
   z-index: 50;
   position: absolute;
   right: 0;
   top: 48px;
   padding-bottom: 10px;
-  width: 115%;
+  width: 1280%;
   background-color: $white;
   border-radius: 0 0 8px 8px;
   .category-detail-container{

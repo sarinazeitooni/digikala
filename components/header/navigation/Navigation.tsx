@@ -29,10 +29,10 @@ const Navigation: React.FC<IProps> = ({data}) => {
                                 <span className={style['navbar-icon']}>{item.icon}
                                     <span className={style['club-icon']}/>
                                 </span>
+                                {item.categories && <div className={style['categories']}>
+                                    <AllCategories data={item.categoriesList}/>
+                                </div>}
                             </div>
-                            {item.categories && <div className={style['categories']}>
-                                <AllCategories data={item.categoriesList}/>
-                            </div>}
                         </Fragment>
                     )
                 })}

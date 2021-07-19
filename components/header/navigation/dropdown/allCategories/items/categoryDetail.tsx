@@ -7,7 +7,6 @@ interface IProps {
     title : string,
     img: string
 }
-
 const CategoryDetail: React.FC<IProps> = ({title ,data,img}) => {
     return (
         <div className={style['category-detail-container']}>

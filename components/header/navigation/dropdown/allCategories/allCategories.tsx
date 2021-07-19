@@ -1,7 +1,6 @@
 import React from "react";
 import style from './style/all-categories.module.scss'
 import CategoryDetail from "./items/categoryDetail";
-
 interface IProps {
     data: {categoryTitle : string , img : string , }[]
 }
