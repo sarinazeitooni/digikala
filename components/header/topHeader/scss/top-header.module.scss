@@ -55,6 +55,9 @@
         position: absolute;
       }
       .search-input{
+        @media screen and (max-width: 1050px){
+          width: 280%;
+        }
         font-family: digikala;
         width: 406%;
         border-radius: 8px;
