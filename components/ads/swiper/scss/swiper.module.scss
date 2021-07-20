@@ -1,6 +1,15 @@
 .swiper-img {
-  @media screen and (max-width: 600px){
+  @media screen and (max-width: 600px) {
     height: 150px;
+  }
+  @media screen and (max-width: 1450px) {
+    height: 345px;
+  }
+  @media screen and (min-width: 2000px) {
+    height: 604px;
+  }
+  @media screen and (max-width: 1030px) {
+    height: 249px;
   }
   width: 100%;
   height: 452px;
