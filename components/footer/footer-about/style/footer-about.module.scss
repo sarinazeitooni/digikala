@@ -51,9 +51,10 @@
     }
   }
   .about-text{
+    @media screen and (max-width: 600px){
+      margin-top: 50px;
+    }
     font-family: digikala;
-    margin-top: 50px;
-    border-top: 1px solid $footer-border;
     padding-top: 10px;
     .about-title{
       font-size: 14px;
