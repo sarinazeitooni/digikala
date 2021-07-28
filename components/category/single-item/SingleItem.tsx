@@ -11,7 +11,7 @@ const SingleItem = () => {
             "delay": 3500,
             "disableOnInteraction": false
         }} className="mySwiper">
-            {data.cards.map((item)=>{
+            {data.cards.map((item: {hasDiscount : boolean , discount : number , img : string , price : number , title : string})=>{
                 return(
                     <SwiperSlide key={uuidv4()}>
                         <CategoryCard hasDiscount = {item.hasDiscount} discount={item.discount} img={item.img} price={item.price} title={item.title}/>

@@ -8,7 +8,7 @@ SwiperCore.use([EffectFade,Navigation, Pagination]);
 const SwiperAd = ()=>{
     return(
         <Swiper style={{'--swiper-theme-color' : 'white' , '--swiper-navigation-color': 'white' , '--swiper-navigation-size' : '26px'}} slidesPerView={1} navigation  effect={'fade'} pagination={{ clickable: true }}>
-                {urls.map((item)=>{
+                {urls.map((item: string)=>{
                     return(
                         <SwiperSlide key={uuidv4()}>
                             <div className={style['swiper-img']} style={{background : `url("${item}")`}}/>

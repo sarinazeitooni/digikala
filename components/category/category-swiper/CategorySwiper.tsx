@@ -9,7 +9,7 @@ const CategorySwiper = ()=>{
 
     return(
         <Swiper style={{ '--swiper-navigation-color': "black" , '--swiper-navigation-size' : '26px'}} slidesPerView={isMobile ? 2 :6} navigation>
-                {data.cards.map((item)=>{
+                {data.cards.map((item : {hasDiscount : boolean , discount : number , img : string , price : number , title : string })=>{
                     return(
                         <SwiperSlide key={uuidv4()}>
                             <CategoryCard hasDiscount = {item.hasDiscount} discount={item.discount} img={item.img} price={item.price} title={item.title}/>

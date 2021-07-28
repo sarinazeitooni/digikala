@@ -13,7 +13,7 @@ const FooterDownloads = () => {
                 <div className={style['downloads']}>
                     <div className={style['download-more']}> ... </div>
                     <div className={style['more-items']}>
-                        {messages.urls.map((url)=>{
+                        {messages.urls.map((url:string)=>{
                             return(
                                 <div key={uuidv4()} style={{background: `url("${url}")`}} className={style['download-item']}/>
                             )

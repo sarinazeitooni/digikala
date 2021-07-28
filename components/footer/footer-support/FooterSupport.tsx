@@ -19,7 +19,7 @@ const FooterSupport = () => {
             <div className={style['support-text']}>
                 <span>{messages.supportFirst}</span><span className={style['responsive-none']}>{messages.supportSecond}</span></div>
             <div className={style['footer-features-container']}>
-                {features.map((item) => {
+                {features.map((item : {icon : any , text : string}) => {
                     return (
                         <div className={style['feature-item-container']} key={uuidv4()}>
                             <img src={item.icon}/>

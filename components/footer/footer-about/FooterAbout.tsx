@@ -12,7 +12,7 @@ const FooterAbout =()=>{
         <>
             <div className={style['about-container']}>
                 <div className={style['trust-container']}>
-                    {messages.urls.map((item)=>{
+                    {messages.urls.map((item: string)=>{
                         return(
                             <img key={uuidv4()} className={style['trust-items']} src={item}/>
                         )

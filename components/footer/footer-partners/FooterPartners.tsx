@@ -6,7 +6,7 @@ const FooterPartners = ()=>{
     return(
         <div className={style['partners-container']}>
             {
-                urls.map((item)=>{
+                urls.map((item:string)=>{
                     return(
                         <div key={uuidv4()} className={style['partner']}>
                             <img src={item}/>

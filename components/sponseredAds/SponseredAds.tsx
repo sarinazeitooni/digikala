@@ -5,7 +5,7 @@ import Ads from "./Ads/Ads";
 const SponseredAds = () => {
     return (
         <div className={style['sponsered-ad-container']}>
-            {Ads.map((item) => {
+            {Ads.map((item: string) => {
                     return (
                         <Card key={item} url={item}/>
                     )
