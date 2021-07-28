@@ -6,6 +6,7 @@ import { v4 as uuidv4 } from 'uuid';
 import useViewPort from "../../../customIsMobileHook/useViewPort";
 const CategorySwiper = ()=>{
     const isMobile = useViewPort();
+
     return(
         <Swiper style={{ '--swiper-navigation-color': "black" , '--swiper-navigation-size' : '26px'}} slidesPerView={isMobile ? 2 :6} navigation>
                 {data.cards.map((item)=>{
